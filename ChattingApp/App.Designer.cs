@@ -35,13 +35,13 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.linkNewAccount = new System.Windows.Forms.LinkLabel();
-            this.textPhoneNumber = new System.Windows.Forms.TextBox();
+            this.buttonSignin = new System.Windows.Forms.Button();
+            this.checkRemember = new System.Windows.Forms.CheckBox();
             this.textPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkRemember = new System.Windows.Forms.CheckBox();
-            this.buttonSignin = new System.Windows.Forms.Button();
+            this.textPhoneNumber = new System.Windows.Forms.TextBox();
+            this.linkNewAccount = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,14 +69,14 @@
             // signOutToolStripMenuItem
             // 
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.signOutToolStripMenuItem.Text = "Sign Out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -91,7 +91,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -109,47 +109,15 @@
             this.panel1.Size = new System.Drawing.Size(354, 602);
             this.panel1.TabIndex = 1;
             // 
-            // label1
+            // buttonSignin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 224);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Phone Number:";
-            // 
-            // linkNewAccount
-            // 
-            this.linkNewAccount.AutoSize = true;
-            this.linkNewAccount.Location = new System.Drawing.Point(126, 571);
-            this.linkNewAccount.Name = "linkNewAccount";
-            this.linkNewAccount.Size = new System.Drawing.Size(98, 13);
-            this.linkNewAccount.TabIndex = 4;
-            this.linkNewAccount.TabStop = true;
-            this.linkNewAccount.Text = "Get a new account";
-            // 
-            // textPhoneNumber
-            // 
-            this.textPhoneNumber.Location = new System.Drawing.Point(60, 240);
-            this.textPhoneNumber.Name = "textPhoneNumber";
-            this.textPhoneNumber.Size = new System.Drawing.Size(203, 20);
-            this.textPhoneNumber.TabIndex = 0;
-            // 
-            // textPassword
-            // 
-            this.textPassword.Location = new System.Drawing.Point(60, 293);
-            this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(203, 20);
-            this.textPassword.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 277);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Password:";
+            this.buttonSignin.Location = new System.Drawing.Point(129, 421);
+            this.buttonSignin.Name = "buttonSignin";
+            this.buttonSignin.Size = new System.Drawing.Size(75, 23);
+            this.buttonSignin.TabIndex = 3;
+            this.buttonSignin.Text = "Sign in";
+            this.buttonSignin.UseVisualStyleBackColor = true;
+            this.buttonSignin.Click += new System.EventHandler(this.buttonSignin_Click);
             // 
             // checkRemember
             // 
@@ -162,15 +130,49 @@
             this.checkRemember.UseVisualStyleBackColor = true;
             this.checkRemember.CheckedChanged += new System.EventHandler(this.checkRemember_CheckedChanged);
             // 
-            // buttonSignin
+            // textPassword
             // 
-            this.buttonSignin.Location = new System.Drawing.Point(129, 421);
-            this.buttonSignin.Name = "buttonSignin";
-            this.buttonSignin.Size = new System.Drawing.Size(75, 23);
-            this.buttonSignin.TabIndex = 3;
-            this.buttonSignin.Text = "Sign in";
-            this.buttonSignin.UseVisualStyleBackColor = true;
-            this.buttonSignin.Click += new System.EventHandler(this.buttonSignin_Click);
+            this.textPassword.Location = new System.Drawing.Point(60, 293);
+            this.textPassword.Name = "textPassword";
+            this.textPassword.PasswordChar = '*';
+            this.textPassword.Size = new System.Drawing.Size(203, 20);
+            this.textPassword.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(57, 277);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Password:";
+            // 
+            // textPhoneNumber
+            // 
+            this.textPhoneNumber.Location = new System.Drawing.Point(60, 240);
+            this.textPhoneNumber.Name = "textPhoneNumber";
+            this.textPhoneNumber.Size = new System.Drawing.Size(203, 20);
+            this.textPhoneNumber.TabIndex = 0;
+            // 
+            // linkNewAccount
+            // 
+            this.linkNewAccount.AutoSize = true;
+            this.linkNewAccount.Location = new System.Drawing.Point(126, 571);
+            this.linkNewAccount.Name = "linkNewAccount";
+            this.linkNewAccount.Size = new System.Drawing.Size(98, 13);
+            this.linkNewAccount.TabIndex = 4;
+            this.linkNewAccount.TabStop = true;
+            this.linkNewAccount.Text = "Get a new account";
+            this.linkNewAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkNewAccount_LinkClicked);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(57, 224);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Phone Number:";
             // 
             // App
             // 
@@ -185,6 +187,7 @@
             this.Name = "App";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nate\'s Messenger";
+            this.Load += new System.EventHandler(this.App_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);

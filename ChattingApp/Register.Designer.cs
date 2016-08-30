@@ -30,10 +30,10 @@
         {
             this.buttonRequest = new System.Windows.Forms.Button();
             this.RequestCode = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textPhoneNumber = new System.Windows.Forms.TextBox();
             this.textFullName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.textPhoneNumber = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.ConfirmCode = new System.Windows.Forms.GroupBox();
             this.buttonConfirm = new System.Windows.Forms.Button();
             this.smsCode = new System.Windows.Forms.TextBox();
@@ -47,7 +47,7 @@
             this.buttonRequest.Location = new System.Drawing.Point(171, 74);
             this.buttonRequest.Name = "buttonRequest";
             this.buttonRequest.Size = new System.Drawing.Size(75, 23);
-            this.buttonRequest.TabIndex = 0;
+            this.buttonRequest.TabIndex = 2;
             this.buttonRequest.Text = "Request";
             this.buttonRequest.UseVisualStyleBackColor = true;
             this.buttonRequest.Click += new System.EventHandler(this.button1_Click);
@@ -66,22 +66,6 @@
             this.RequestCode.TabStop = false;
             this.RequestCode.Text = "Step 1: Request Code";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Phone Number";
-            // 
-            // textPhoneNumber
-            // 
-            this.textPhoneNumber.Location = new System.Drawing.Point(91, 22);
-            this.textPhoneNumber.Name = "textPhoneNumber";
-            this.textPhoneNumber.Size = new System.Drawing.Size(155, 20);
-            this.textPhoneNumber.TabIndex = 1;
-            // 
             // textFullName
             // 
             this.textFullName.Location = new System.Drawing.Point(91, 48);
@@ -97,6 +81,22 @@
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Full Name:";
+            // 
+            // textPhoneNumber
+            // 
+            this.textPhoneNumber.Location = new System.Drawing.Point(91, 22);
+            this.textPhoneNumber.Name = "textPhoneNumber";
+            this.textPhoneNumber.Size = new System.Drawing.Size(155, 20);
+            this.textPhoneNumber.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Phone Number";
             // 
             // ConfirmCode
             // 
@@ -117,16 +117,17 @@
             this.buttonConfirm.Location = new System.Drawing.Point(171, 48);
             this.buttonConfirm.Name = "buttonConfirm";
             this.buttonConfirm.Size = new System.Drawing.Size(75, 23);
-            this.buttonConfirm.TabIndex = 0;
+            this.buttonConfirm.TabIndex = 1;
             this.buttonConfirm.Text = "Confirm";
             this.buttonConfirm.UseVisualStyleBackColor = true;
+            this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
             // smsCode
             // 
             this.smsCode.Location = new System.Drawing.Point(91, 22);
             this.smsCode.Name = "smsCode";
             this.smsCode.Size = new System.Drawing.Size(155, 20);
-            this.smsCode.TabIndex = 1;
+            this.smsCode.TabIndex = 0;
             // 
             // label4
             // 
